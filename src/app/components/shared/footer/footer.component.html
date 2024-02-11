@@ -1,0 +1,11 @@
+<footer
+  class="flex-center-column"
+  [qairChangeColor]="color"
+  [counterValue]="maxCount"
+  [counter]="footerCounter"
+>
+  <qair-button (buttonClicked)="increaseFooterCounter($event)"
+    >Clicked {{ footerCounter }} items</qair-button
+  >
+  <h2>Footer</h2>
+</footer>

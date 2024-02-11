@@ -1,0 +1,32 @@
+.qair-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.qair-btn.small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.qair-btn.medium {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.qair-btn.large {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
+
+.qair-btn:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.qair-btn:active {
+  background-color: var(--button-active-bg-color);
+}

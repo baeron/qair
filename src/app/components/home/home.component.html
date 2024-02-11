@@ -1,0 +1,33 @@
+<main class="home">
+  <section
+    class="home__column home__column--sidenav"
+    [qairChangeColor]="color"
+    [counterValue]="maxCount"
+    [counter]="sideNavCounter"
+  >
+    <div class="home__content">
+      <h2 class="home__title">SideNav</h2>
+      <qair-button (buttonClicked)="increaseSideNavCounter($event)"
+        >Clicked {{ sideNavCounter }} items</qair-button
+      >
+    </div>
+  </section>
+  <section
+    class="home__column home__column--content"
+    [qairChangeColor]="color"
+    [counterValue]="maxCount"
+    [counter]="contentCounter"
+  >
+    <div class="home__content">
+      <h2 class="home__title">Content</h2>
+      <div class="home__content-box flex-center-column">
+        <qair-button (buttonClicked)="increaseContentCounter($event)"
+          >Clicked {{ contentCounter }} items</qair-button
+        >
+        <qair-button (buttonClicked)="increaseContentCounter($event)"
+          >Clicked {{ contentCounter }} items</qair-button
+        >
+      </div>
+    </div>
+  </section>
+</main>

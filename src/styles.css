@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --button-bg-color: #007bff;
+  --button-text-color: white;
+  --button-hover-bg-color: #0056b3;
+  --button-active-bg-color: #00408b;
+  --border-color: blue; 
+}
+
+.flex-center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
