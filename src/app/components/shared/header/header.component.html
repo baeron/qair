@@ -1,0 +1,11 @@
+<header
+  class="flex-center-column"
+  [qairChangeColor]="color"
+  [counterValue]="maxCount"
+  [counter]="headerCounter"
+>
+  <h1>Header</h1>
+  <qair-button (buttonClicked)="increaseHeaderCounter($event)"
+    >Clicked {{ headerCounter }} items</qair-button
+  >
+</header>
