@@ -6,11 +6,11 @@ export class ClickCounterService {
   private clicksSource = new BehaviorSubject<number>(0);
   clicks$ = this.clicksSource.asObservable();
 
-  incrementClicks() {
+  incrementClicks(): void {
     this.clicksSource.next(this.clicksSource.value + 1);
   }
 
-  getClicks() {
+  getClicks(): number {
     return this.clicksSource.value;
   }
 }
